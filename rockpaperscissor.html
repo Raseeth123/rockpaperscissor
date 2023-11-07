@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        body{
+            background-color: #212529;
+            color: white;
+            
+        }
+        .cot{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .cards{
+            width:250px;
+            height: 200px;
+            background-color: white;
+            border-radius: 30px;
+            margin: 5px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .but{
+            background-color: white;
+            box-shadow: none;
+            border: 0px;
+            font-size: 100px;
+            padding: 15px;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+
+        }
+
+        #scoreupdate{
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #scoreupdate0{
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        #scoreupdate1{
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .cards1{
+            width:250px;
+            height: 200px;
+            background-color: white;
+            border-radius: 30px;
+            margin: 5px;
+            text-align: center;
+            font-size: 30px;
+           
+        }
+        
+        .cot1{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+
+
+        @media screen and(max-width:400px) {
+            .cards{
+                width:100px;
+                height: 100px;
+            }
+
+            .but{
+                width:200px;
+                height:210px;
+            }
+           
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cot">
+        <div class="cards">
+            <button class="but" id="stone">✊</button>
+        </div>
+        <div class="cards">
+            <button class="but" id="paper">🤚</button>
+        </div>
+        <div class="cards">
+            <button class="but" id="scissor">✌️</button>
+        </div>
+    </div>
+    <p id="scoreupdate0"></p>
+      <p id="scoreupdate"></p>
+      <p id="scoreupdate1"></p>
+
+    <div class="cot1">
+     <div class="cards1">
+        <button class="but" id="clear">🔴</button>
+     </div>
+    </div>
+    <script src="stonepaperscissor.js"></script>
+</body>
+</html>
